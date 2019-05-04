@@ -1,12 +1,15 @@
-//settings
-@import 'settings/reset';
-@import 'settings/variables';
-@import 'settings/mixins';
-@import 'settings/global';
-//partials
-@import 'partials/1head';
-@import 'partials/2middle';
-@import 'partials/3footer';
-//responsive
-@import 'responsive/tablet';
-@import 'responsive/mobile';
+// Settings
+@import 'helpers/reset';
+@import 'helpers/variables';
+@import 'helpers/fonts';
+@import 'helpers/mixins';
+@import 'helpers/keyframes';
+@import 'helpers/global';
+// Partials
+@import 'partials/home';
+@import 'partials/showreel';
+@import 'partials/about';
+@import 'partials/contact';
+// Components
+@import 'components/button';
+@import 'components/navBar';

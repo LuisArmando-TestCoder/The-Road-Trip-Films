@@ -20,39 +20,213 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none; }
+  content: "";
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato Bold";
+  src: url("../fonts/Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato Black Italic";
+  src: url("../../fonts/Lato-BlackItalic.ttf") format("truetype");
+}
 ::-webkit-scrollbar {
-  width: 4px; }
+  width: 10px;
+  height: 10px;
+}
 
 ::-webkit-scrollbar-track {
-  background: transparent; }
+  background: #f4f4f4;
+}
 
 ::-webkit-scrollbar-thumb {
   background: #000;
-  border-radius: 2px; }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #333; }
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #111;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato";
+  margin: 0;
+  background: #101010;
+}
+
+.menu-wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.menu {
+  padding: 50px 0;
+  background: #fff;
+  width: 100%;
+  top: -100vh;
+  bottom: 0;
+  left: 100vw;
+  box-sizing: border-box;
+  position: absolute;
+  transition: 1s;
+}
+
+.menu-input {
+  transform: rotate(0deg);
+  z-index: 1;
+  position: fixed;
+  transition: 0.5s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  top: 0px;
+  appearance: none;
+  width: 30px;
+  height: 5px;
+  right: 25px;
+  background: #fff;
+  margin: 35px auto;
+}
+.menu-input:hover {
+  cursor: pointer;
+}
+.menu-input:before, .menu-input:after {
+  transition: 0.25s;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #fff;
+  position: absolute;
+  transform: rotate(0deg);
+}
+.menu-input:before:hover, .menu-input:after:hover {
+  cursor: pointer;
+}
+.menu-input:before {
+  top: -10px;
+}
+.menu-input:after {
+  top: 10px;
+}
+
+.menu-input:checked + .menu {
+  left: 75vw;
+}
+@media (max-width: 1080px) {
+  .menu-input:checked + .menu {
+    left: 50vw;
+  }
+}
+@media (max-width: 640px) {
+  .menu-input:checked + .menu {
+    left: 0;
+  }
+}
+
+.menu-input:checked {
+  height: 0;
+  top: 5px;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+.menu-input:checked:before, .menu-input:checked:after {
+  top: -5px;
+}
+.menu-input:checked:after {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.menu-input:checked:before {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+.menu__list {
+  list-style: none;
+}
+
+.menu-label {
+  z-index: 1;
+  background: #000;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 22.5px;
+  transform: scale(2);
+  right: 25px;
+  margin: auto;
+  border-radius: 50%;
+}
+.menu-label:hover {
+  cursor: pointer;
+}
+
+.menu__list {
+  padding: 0;
+  margin: 20px 0;
+}
+
+.item__anchor {
+  transition: 0.5s;
+  padding: 25px;
+  display: block;
+  text-decoration: none;
+  color: #666;
+  box-shadow: inset 0px 0 0 #0000;
+}
+.item__anchor:hover {
+  box-shadow: inset 10px 0 0 #000;
+  text-decoration: underline;
+  color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */

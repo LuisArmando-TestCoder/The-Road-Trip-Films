@@ -1,0 +1,136 @@
+$laptopBP: 1080px;
+
+.menu-wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.menu {
+  padding: 50px 0;
+  background: #fff;
+  width: 100%;
+  top: -100vh;
+  bottom: 0;
+  left: 100vw;
+  box-sizing: border-box;
+  position: absolute;
+  transition: 1s;
+}
+
+.menu-input {
+  transform: rotate(0deg);
+  z-index: 1;
+  position: fixed;
+  transition: 0.5s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  top: 0px;
+  appearance: none;
+  width: 30px;
+  height: 5px;
+  right: 25px;
+  background: #fff;
+  margin: 35px auto;
+//   float: right;
+  &:hover {
+    cursor: pointer;
+  }
+  &:before, &:after {
+    transition: 0.25s;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #fff;
+    position: absolute;
+    transform: rotate(0deg);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &:before {
+    top: -10px;
+  }
+  &:after {
+    top: 10px;
+  }
+}
+
+.menu-input:checked + .menu {
+  left: 75vw;
+  @media (max-width: 1080px) {
+      left: 50vw;
+  }
+  @media (max-width: 640px) {
+      left: 0;
+  }
+}
+
+.menu-input:checked {
+  height: 0;
+  top: 5px;
+  &:before, &:after {
+    top: -5px;
+  }
+  &:after {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+  &:before {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+.menu__list {
+  list-style: none;
+}
+
+.menu-label {
+  z-index: 1;
+  background: #000;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 22.5px;
+  transform: scale(2);
+  right: 25px;
+  margin: auto;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.menu__list {
+  padding: 0;
+  margin: 20px 0;
+}
+
+.item__anchor {
+  transition: 0.5s;
+  padding: 25px;
+  display: block;
+  text-decoration: none;
+  color: #666;
+  box-shadow: inset 0px 0 0 #0000;
+  &:hover {
+    box-shadow: inset 10px 0 0 #000;
+    text-decoration: underline;
+    color: #000;
+  }
+}

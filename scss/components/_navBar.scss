@@ -9,7 +9,7 @@ $laptopBP: 1080px;
 
 .menu {
   padding: 50px 0;
-  background: #fff;
+  background: #101010;
   width: 100%;
   top: -100vh;
   bottom: 0;
@@ -31,19 +31,20 @@ $laptopBP: 1080px;
   width: 30px;
   height: 5px;
   right: 25px;
-  background: #fff;
+  background: #101010;
   margin: 35px auto;
-//   float: right;
+  //   float: right;
   &:hover {
     cursor: pointer;
   }
-  &:before, &:after {
+  &:before,
+  &:after {
     transition: 0.25s;
-    content: '';
+    content: "";
     display: block;
     width: 30px;
     height: 5px;
-    background: #fff;
+    background: #101010;
     position: absolute;
     transform: rotate(0deg);
     &:hover {
@@ -61,17 +62,16 @@ $laptopBP: 1080px;
 .menu-input:checked + .menu {
   left: 75vw;
   @media (max-width: 1080px) {
-      left: 50vw;
+    left: 50vw;
   }
   @media (max-width: 640px) {
-      left: 0;
+    left: 25vw;
   }
 }
 
 .menu-input:checked {
-  height: 0;
-  top: 5px;
-  &:before, &:after {
+  &:before,
+  &:after {
     top: -5px;
   }
   &:after {
@@ -80,14 +80,16 @@ $laptopBP: 1080px;
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-}
+  }
   &:before {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
-}
+  }
+  height: 0;
+  top: 5px;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -100,20 +102,29 @@ $laptopBP: 1080px;
 }
 
 .menu-label {
+  &:hover {
+    cursor: pointer;
+  }
   z-index: 1;
-  background: #000;
   display: block;
+  background: #fff;
   width: 30px;
   height: 30px;
   position: fixed;
   top: 22.5px;
-  transform: scale(2);
   right: 25px;
   margin: auto;
   border-radius: 50%;
-  &:hover {
-    cursor: pointer;
-  }
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
 }
 
 .menu__list {
@@ -129,8 +140,8 @@ $laptopBP: 1080px;
   color: #666;
   box-shadow: inset 0px 0 0 #0000;
   &:hover {
-    box-shadow: inset 10px 0 0 #000;
+    box-shadow: inset 10px 0 0 #fff;
     text-decoration: underline;
-    color: #000;
+    color: #fff;
   }
 }

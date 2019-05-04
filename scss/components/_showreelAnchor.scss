@@ -1,0 +1,17 @@
+.showreel {
+    position: fixed;
+    width: 100px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 25px;
+    margin: auto;
+    text-decoration: none;
+    color: #888;
+    font-weight: bold;
+    &::before {
+        color: #000;
+        content: '►';
+        margin-right: 5px;
+    }
+}

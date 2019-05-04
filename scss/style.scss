@@ -5,6 +5,8 @@
 @import 'helpers/mixins';
 @import 'helpers/keyframes';
 @import 'helpers/global';
+// Templates
+@import 'templates/content';
 // Partials
 @import 'partials/home';
 @import 'partials/showreel';
@@ -13,3 +15,4 @@
 // Components
 @import 'components/button';
 @import 'components/navBar';
+@import 'components/showreelAnchor';

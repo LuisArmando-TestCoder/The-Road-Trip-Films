@@ -1,0 +1,32 @@
+#videos {
+    padding: 0 35px;
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
+    box-sizing: border-box;
+    b {
+        font-weight: bold;
+    }
+}
+
+#videoIframe {
+  width: 100%;
+  max-width: 720px;
+  height: 50vw;
+  max-height: 360px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#videoTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#videoDescription {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #888;
+}

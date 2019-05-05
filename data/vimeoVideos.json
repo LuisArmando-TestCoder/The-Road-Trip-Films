@@ -1,6 +1,12 @@
 [
     {
-        "iframe-link": "<iframe src='https://player.vimeo.com/video/246056408' allow='autoplay; fullscreen' allowfullscreen></iframe>",
-        "title": "Catarata Ayil | The Waterfall trail"
+        "title": "Catarata Ayil | The Waterfall trail",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi iure nobis nulla assumenda eligendi beatae dolores fugit harum.",
+        "src": "https://player.vimeo.com/video/246056408"
+    },
+    {
+        "title": "Tuanis Chocolate",
+        "description": "Rem voluptatibus eius expedita optio corrupti quaerat eligendi accusamus officiis consequuntur non!",
+        "src": "https://player.vimeo.com/video/236695611"
     }
 ]

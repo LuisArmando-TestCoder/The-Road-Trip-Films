@@ -1,7 +1,11 @@
+#vimeoVideos {
+    position: relative;
+}
+
 #videos {
     padding: 0 35px;
     width: 100%;
-    max-width: 640px;
+    max-width: 719px;
     margin: auto;
     box-sizing: border-box;
     b {
@@ -29,4 +33,88 @@
     font-size: 14px;
     margin-top: 5px;
     color: #888;
+    max-width: 320px;
+}
+
+.arrowsWrapper {
+    z-index: 1;
+    width: 75vw;
+    max-width: 610px;
+    height: 0px;
+    margin: auto;
+    position: relative;
+    button {
+        position: absolute;
+        top: 320px;
+        bottom: 0;
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: auto 0;
+        position: absolute;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        background-color: #fff8;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../img/svg/arrow.svg');
+        &:hover {
+            background-color: #fff;
+        }
+        &:first-child {
+            transform: rotate(-180deg);
+            -webkit-transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -o-transform: rotate(-180deg);
+        }
+        &:last-child {
+            right: 0;
+        }
+        @media (max-width: 640px) {
+            top: 50vw;
+        }
+    }
+}
+
+[data-arrow-clicked="prev"] {
+    animation: prev 1s;
+    -webkit-animation: prev 1s;
+}
+
+[data-arrow-clicked="next"] {
+    animation: next 1s;
+    -webkit-animation: next 1s;
+}
+
+@keyframes prev {
+    from {
+        clip-path: circle(0% at 0 0);
+        -webkit-clip-path: circle(0% at 0 0);
+    }
+    to {
+        clip-path: circle(150% at 0 0);
+        -webkit-clip-path: circle(150% at 0 0);
+    }
+}
+
+@keyframes next {
+    from {
+        clip-path: circle(0% at 100% 0);
+        -webkit-clip-path: circle(0% at 100% 0);
+    }
+    to {
+        clip-path: circle(150% at 100% 0);
+        -webkit-clip-path: circle(150% at 100% 0);
+    }
 }

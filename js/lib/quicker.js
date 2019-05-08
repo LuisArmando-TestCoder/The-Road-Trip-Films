@@ -242,7 +242,7 @@ function quicker() {
       }
     }
   
-    // showHide({selector: '<anyTypeOfSelector>', showState: '<anyNewAttributeName>'});
+    // showHide({selector: '<anyTypeOfSelector>', sho wState: '<anyNewAttributeName>'});
     function setClassShowHide(elemsObj, windowHeightFraction = 7.5) {
       const elems = document.querySelectorAll(elemsObj.selector);
       function controlView() {

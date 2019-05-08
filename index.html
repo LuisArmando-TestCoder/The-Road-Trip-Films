@@ -29,12 +29,16 @@
         </section>
         <section id="photoGallery">
             <h2>My professional photo</h2>
-            <ul></ul>
+            <div></div>
         </section>
         <section id="vimeoVideos">
             <h2>Vimeo videos</h2>
+            <div class="arrowsWrapper">
+                <button title="previous video"></button>
+                <button title="next video"></button>
+            </div>
             <div id="videos">
-                <iframe id="videoIframe" src="" frameborder="0"></iframe>
+                <iframe allowfullscreen id="videoIframe" frameborder="0"></iframe>
                 <h3 id="videoTitle"></h3>
                 <b>Description: </b>
                 <p id="videoDescription"></p>
@@ -46,6 +50,8 @@
     <script src="js/navigation/navRender.js"></script>
     <script src="js/navigation/leaveOpenNavMenu.js"></script>
     <script src="js/vimeoVideos/renderVideo.js"></script>
+    <script src="js/photoGallery/renderGallery.js"></script>
+    <script src="js/controlView.js"></script>
 </body>
 
 </html>

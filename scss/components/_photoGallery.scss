@@ -1,0 +1,32 @@
+#photoGallery > div {
+  position: relative;
+  display: grid;
+  grid-gap: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  div {
+    position: relative;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+  }
+  img {
+    height: 270px;
+    width: 100%;
+    object-fit: cover;
+  }
+  span {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 32px;
+    margin: auto;
+    color: #fff;
+    letter-spacing: 3px;
+    text-shadow: 0 0 2px #000;
+  }
+}

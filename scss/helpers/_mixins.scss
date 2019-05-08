@@ -20,3 +20,22 @@
         }
     }
 }
+
+@mixin fadeIn {
+    opacity: 0;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    animation: fadeIn 1s forwards;
+    -webkit-animation: fadeIn 1s forwards;
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}

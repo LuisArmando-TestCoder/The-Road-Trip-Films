@@ -5,6 +5,7 @@
 @import 'helpers/mixins';
 @import 'helpers/keyframes';
 @import 'helpers/global';
+@import 'helpers/showHideControllers';
 // Templates
 @import 'templates/content';
 // Partials
@@ -18,3 +19,4 @@
 @import 'components/showreelAnchor';
 @import 'components/vimeoVideos';
 @import 'components/header';
+@import 'components/photoGallery';

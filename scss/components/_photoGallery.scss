@@ -20,7 +20,9 @@
   a {
     &:hover {
       letter-spacing: 15px;
-}
+    }
+    letter-spacing: 12px;
+    text-decoration: none;
     position: absolute;
     text-align: center;
     top: 0;
@@ -30,12 +32,11 @@
     line-height: 16;
     margin: auto;
     color: #fff;
-    letter-spacing: 3px;
     text-shadow: 0 0 2px #000;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-}
+  }
 }

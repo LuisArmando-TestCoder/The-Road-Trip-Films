@@ -4,6 +4,7 @@
   grid-gap: 32px;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   div {
+    overflow: hidden;
     position: relative;
     transition: 0.25s;
     -webkit-transition: 0.25s;
@@ -17,6 +18,14 @@
     object-fit: cover;
   }
   a {
+    &:hover {
+      letter-spacing: 15px;
+      transform: scale(1.25);
+      -webkit-transform: scale(1.25);
+      -moz-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+      -o-transform: scale(1.25);
+}
     position: absolute;
     text-align: center;
     top: 0;
@@ -28,5 +37,10 @@
     color: #fff;
     letter-spacing: 3px;
     text-shadow: 0 0 2px #000;
-  }
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+}
 }

@@ -16,14 +16,14 @@
     width: 100%;
     object-fit: cover;
   }
-  span {
+  a {
     position: absolute;
     text-align: center;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 32px;
+    line-height: 16;
     margin: auto;
     color: #fff;
     letter-spacing: 3px;

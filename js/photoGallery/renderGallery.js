@@ -6,12 +6,14 @@
             obj.sources.forEach((src, i) => {
                 const div = document.createElement('div');
                 const img = document.createElement('img');
-                const span = document.createElement('span');
-                span.innerText = obj.category;
+                const a = document.createElement('a');
+                a.innerText = obj.category;
+                a.href = src; 
+                a.target = '_blank';
                 img.src = src;
                 img.alt = `${obj.category} photo ${i + 1}`;
                 div.appendChild(img);
-                div.appendChild(span);
+                div.appendChild(a);
                 gallery.appendChild(div);
             })
         });

@@ -469,17 +469,11 @@ header {
   object-fit: cover;
 }
 #photoGallery > div a {
-  letter-spacing: 12px;
   text-decoration: none;
   text-align: center;
   height: 100px;
   margin: auto;
   color: #e5e5e5;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
 }
 #photoGallery > div a:hover {
   color: #fff;
@@ -488,6 +482,7 @@ header {
 #sliderMenu {
   display: grid;
   height: auto;
+  max-height: 80vh;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -503,14 +498,14 @@ header {
   place-items: center;
   grid-template-columns: 1fr 2fr;
   grid-gap: 25px;
-}
-#sliderMenu > a:hover img {
-  box-shadow: 0 0 0 7.5px #000, 0 0 0 9px #fff;
   transition: 0.25s;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -ms-transition: 0.25s;
   -o-transition: 0.25s;
+}
+#sliderMenu > a:hover {
+  box-shadow: inset 10px 0 0 #fff;
 }
 #sliderMenu img {
   margin-left: 50px;

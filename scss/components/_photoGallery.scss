@@ -2,7 +2,10 @@
   position: relative;
   display: grid;
   grid-gap: 32px;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-columns: 1fr 3fr;
+  [title~="interaction"] {
+    top: 0;
+  }
   div {
     overflow: hidden;
     position: relative;
@@ -13,8 +16,6 @@
     -o-transition: 0.25s;
   }
   img {
-    height: 270px;
-    width: 100%;
     object-fit: cover;
   }
   a {
@@ -29,7 +30,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    line-height: 16;
+    height: 50px;
     margin: auto;
     color: #fff;
     text-shadow: 0 0 2px #000;
@@ -38,5 +39,47 @@
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
+  }
+}
+
+#sliderMenu {
+  background: #101010;
+  height: 75vh;
+  overflow: auto;
+  display: grid;
+  place-items: center;
+  & > div {
+    &:hover {
+      img {
+        box-shadow: 0 0 0 5px #000, 
+        0 0 0 10px #fff;
+        transition: 0.25s;
+        -webkit-transition: 0.25s;
+        -moz-transition: 0.25s;
+        -ms-transition: 0.25s;
+        -o-transition: 0.25s;
+}
+    }
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 25px;
+  }
+  img {
+    margin-left: 50px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
   }
 }

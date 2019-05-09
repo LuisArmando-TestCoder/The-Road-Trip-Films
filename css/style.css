@@ -152,6 +152,51 @@ h2 {
   min-height: 100vh;
 }
 
+[title~=interaction] {
+  cursor: pointer;
+  position: absolute;
+  top: 320px;
+  bottom: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  position: absolute;
+  border: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  background-color: #fff8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/svg/arrow.svg");
+}
+[title~=interaction]:hover {
+  background-color: #fff;
+}
+[title~=interaction]:first-child {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+[title~=interaction]:last-child {
+  right: 0;
+}
+@media (max-width: 640px) {
+  [title~=interaction] {
+    top: 50vw;
+  }
+}
+
 .menu-wrapper {
   position: fixed;
   bottom: 0;
@@ -363,50 +408,6 @@ h2 {
   margin: auto;
   position: relative;
 }
-.arrowsWrapper button {
-  position: absolute;
-  top: 320px;
-  bottom: 0;
-  display: block;
-  width: 40px;
-  height: 40px;
-  margin: auto 0;
-  position: absolute;
-  border: 0;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  background-color: #fff8;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../img/svg/arrow.svg");
-}
-.arrowsWrapper button:hover {
-  background-color: #fff;
-}
-.arrowsWrapper button:first-child {
-  transform: rotate(-180deg);
-  -webkit-transform: rotate(-180deg);
-  -moz-transform: rotate(-180deg);
-  -ms-transform: rotate(-180deg);
-  -o-transform: rotate(-180deg);
-}
-.arrowsWrapper button:last-child {
-  right: 0;
-}
-@media (max-width: 640px) {
-  .arrowsWrapper button {
-    top: 50vw;
-  }
-}
 
 [data-arrow-clicked=prev] {
   animation: prev 1s;
@@ -452,7 +453,10 @@ header {
   position: relative;
   display: grid;
   grid-gap: 32px;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-columns: 1fr 3fr;
+}
+#photoGallery > div [title~=interaction] {
+  top: 0;
 }
 #photoGallery > div div {
   overflow: hidden;
@@ -464,8 +468,6 @@ header {
   -o-transition: 0.25s;
 }
 #photoGallery > div img {
-  height: 270px;
-  width: 100%;
   object-fit: cover;
 }
 #photoGallery > div a {
@@ -477,7 +479,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  line-height: 16;
+  height: 50px;
   margin: auto;
   color: #fff;
   text-shadow: 0 0 2px #000;
@@ -489,6 +491,45 @@ header {
 }
 #photoGallery > div a:hover {
   letter-spacing: 15px;
+}
+
+#sliderMenu {
+  background: #101010;
+  height: 75vh;
+  overflow: auto;
+  display: grid;
+  place-items: center;
+}
+#sliderMenu > div {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 25px;
+}
+#sliderMenu > div:hover img {
+  transition: 0.25s;
+  box-shadow: 0 0 0 5px #000, 0 0 0 10px #fff;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+}
+#sliderMenu img {
+  margin-left: 50px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

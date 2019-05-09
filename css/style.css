@@ -456,18 +456,14 @@ header {
   grid-gap: 32px;
   grid-template-columns: 1fr 3fr;
 }
+@media (max-width: 1080px) {
+  #photoGallery > div {
+    grid-template-columns: 1fr;
+  }
+}
 #photoGallery > div [title~=interaction] {
   top: 0;
   z-index: 1;
-}
-#photoGallery > div div {
-  overflow: hidden;
-  position: relative;
-  transition: 0.25s;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -ms-transition: 0.25s;
-  -o-transition: 0.25s;
 }
 #photoGallery > div img {
   object-fit: cover;
@@ -475,16 +471,10 @@ header {
 #photoGallery > div a {
   letter-spacing: 12px;
   text-decoration: none;
-  position: absolute;
   text-align: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 50px;
+  height: 100px;
   margin: auto;
-  color: #fff;
-  text-shadow: 0 0 2px #000;
+  color: #e5e5e5;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -492,16 +482,16 @@ header {
   -o-transition: 0.5s;
 }
 #photoGallery > div a:hover {
-  letter-spacing: 15px;
+  color: #fff;
 }
 
 #sliderMenu {
-  height: 75vh;
-  overflow: auto;
   display: grid;
-  place-items: center;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
-#sliderMenu > div {
+#sliderMenu > a {
   cursor: pointer;
   width: 100%;
   height: 100%;
@@ -514,8 +504,8 @@ header {
   grid-template-columns: 1fr 2fr;
   grid-gap: 25px;
 }
-#sliderMenu > div:hover img {
-  box-shadow: 0 0 0 7.5px #000, 0 0 0 10px #fff;
+#sliderMenu > a:hover img {
+  box-shadow: 0 0 0 7.5px #000, 0 0 0 9px #fff;
   transition: 0.25s;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;

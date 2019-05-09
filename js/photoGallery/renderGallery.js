@@ -6,6 +6,18 @@
   let galleryArray;
   let galleryIndex = 0;
   let sourceIndex = 0;
+  function setHrefOnResize() {
+    const anchors = [... menu.querySelectorAll('a')];
+    if(window.innerWidth <= 1080) {
+      anchors.forEach((a) => {
+        a.setAttribute('href', '#slider');
+      });
+    } else {
+      anchors.forEach((a) => {
+        a.removeAttribute('href');
+      });
+    }
+  }
   function render(index) {
     return {
       category() {
@@ -15,22 +27,23 @@
       menu(array) {
         galleryArray = array;
         galleryArray.forEach((obj, i) => {
-          const div = document.createElement('div');
+          const a = document.createElement('a');
           const littleDiv = document.createElement('div');
           const img = document.createElement('img');
           const h3 = document.createElement('h3');
-          
+
           img.src = obj.sources[0];
           img.alt = `${obj.category} photo ${i + 1}`;
           h3.innerText = obj.category;
 
-          div.addEventListener('click', render(i).category);
+          a.addEventListener('click', render(i).category);
 
           littleDiv.appendChild(h3);
-          div.appendChild(img);
-          div.appendChild(littleDiv);
-          menu.appendChild(div);
+          a.appendChild(img);
+          a.appendChild(littleDiv);
+          menu.appendChild(a);
         });
+        setHrefOnResize();
         render(0).gallery();
       },
       gallery() {
@@ -59,5 +72,6 @@
   }
   prev.addEventListener('click', move(-1).gallery);
   next.addEventListener('click', move(1).gallery);
+  window.addEventListener('resize', setHrefOnResize);
   quicker().fetchJSON('data/photos.json', render().menu);
 })();

@@ -450,6 +450,7 @@ header {
 }
 
 #photoGallery > div {
+  background: #000;
   position: relative;
   display: grid;
   grid-gap: 32px;
@@ -457,6 +458,7 @@ header {
 }
 #photoGallery > div [title~=interaction] {
   top: 0;
+  z-index: 1;
 }
 #photoGallery > div div {
   overflow: hidden;
@@ -494,7 +496,6 @@ header {
 }
 
 #sliderMenu {
-  background: #101010;
   height: 75vh;
   overflow: auto;
   display: grid;
@@ -514,8 +515,8 @@ header {
   grid-gap: 25px;
 }
 #sliderMenu > div:hover img {
+  box-shadow: 0 0 0 7.5px #000, 0 0 0 10px #fff;
   transition: 0.25s;
-  box-shadow: 0 0 0 5px #000, 0 0 0 10px #fff;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -ms-transition: 0.25s;
@@ -530,6 +531,12 @@ header {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+#slider img[src] {
+  height: 80vh;
+  width: 100%;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=style.css.map */

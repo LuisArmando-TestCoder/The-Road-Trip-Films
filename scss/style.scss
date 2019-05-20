@@ -8,15 +8,12 @@
 @import 'helpers/showHideControllers';
 // Templates
 @import 'templates/content';
-// Partials
-@import 'partials/home';
-@import 'partials/showreel';
-@import 'partials/about';
-@import 'partials/contact';
 // Components
 @import 'components/button';
 @import 'components/navBar';
 @import 'components/showreelAnchor';
+@import 'components/showreel';
 @import 'components/vimeoVideos';
 @import 'components/header';
 @import 'components/photoGallery';
+@import 'components/logo';

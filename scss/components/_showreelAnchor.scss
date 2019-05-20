@@ -8,10 +8,30 @@
     margin: auto;
     text-decoration: none;
     color: #888;
-    font-weight: bold;
+    font-size: 16px;
+    background: #0000;
+    border: 0;
+    outline: none;
+    letter-spacing: 2px;
+    &:hover {
+        cursor: pointer;
+        &::before {
+            margin-left: 2.5px;
+        }
+    }
     &::before {
         color: #000;
         content: '►';
         margin-right: 5px;
-    }
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+}
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
 }

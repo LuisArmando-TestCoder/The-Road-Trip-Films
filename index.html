@@ -14,7 +14,7 @@
 <body>
     <header>
         <a href="./" class="logo"></a>
-        <a href="showreel.html" class="showreel">Showreel</a>
+        <button class="showreel">Showreel</button>
         <div class="menu-wrapper">
             <label class="menu-label" for="menu"></label>
             <input class="menu-input" id="menu" type="checkbox">
@@ -24,41 +24,21 @@
         </div>
     </header>
     <div id="content">
+        <section hide id="showreel">
+            <h2>Showreel</h2>
+            <div id="showreelOut"></div>
+            <video controls src="./videos/Will Sutton Filmmaking Showreel 2018.mp4"></video>
+        </section>
         <section id="heroBanner">
             <div class="logoAnimation"></div>
-        </section>
-        <section id="photoGallery">
-            <h2>My professional photos</h2>
-            <div>
-                <section id="sliderMenu"></section>
-                <section>
-                    <button title="interaction previous photo"></button>
-                    <div id="slider"></div>
-                    <button title="interaction next photo"></button>
-                </section>
-            </div>
-        </section>
-        <section id="vimeoVideos">
-            <h2>Vimeo videos</h2>
-            <div class="arrowsWrapper">
-                <button title="interaction previous video"></button>
-                <button title="interaction next video"></button>
-            </div>
-            <div id="videos">
-                <iframe allowfullscreen id="videoIframe" frameborder="0"></iframe>
-                <h3 id="videoTitle"></h3>
-                <b>Description: </b>
-                <p id="videoDescription"></p>
-            </div>
         </section>
     </div>
 
 
     <script src="js/navigation/navRender.js"></script>
     <script src="js/navigation/leaveOpenNavMenu.js"></script>
-    <script src="js/vimeoVideos/renderVideo.js"></script>
-    <script src="js/photoGallery/renderGallery.js"></script>
     <script src="js/controlView.js"></script>
+    <script src="js/showreel.js"></script>
 </body>
 
 </html>

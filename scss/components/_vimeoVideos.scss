@@ -1,78 +1,19 @@
 #vimeoVideos {
     position: relative;
 }
-
 #videos {
-    padding: 0 35px;
-    width: 100%;
-    max-width: 719px;
-    margin: auto;
-    box-sizing: border-box;
-    b {
-        font-weight: bold;
+    iframe {
+        width: 100%;
+        height: 40vw;
+        @media (max-width: 1080px) {
+            height: 55vw;
+        }
     }
-}
 
-#videoIframe {
-  width: 100%;
-  max-width: 720px;
-  height: 50vw;
-  max-height: 360px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#videoTitle {
-    font-size: 20px;
-    margin: 25px 0 10px;
-    font-weight: 100;
-}
-
-#videoDescription {
-    font-size: 14px;
-    margin-top: 5px;
-    color: #888;
-    max-width: 320px;
-}
-
-.arrowsWrapper {
-    z-index: 1;
-    width: 75vw;
-    max-width: 610px;
-    height: 0px;
-    margin: auto;
-    position: relative;
-}
-
-[data-arrow-clicked="prev"] {
-    animation: prev 1s;
-    -webkit-animation: prev 1s;
-}
-
-[data-arrow-clicked="next"] {
-    animation: next 1s;
-    -webkit-animation: next 1s;
-}
-
-@keyframes prev {
-    from {
-        clip-path: circle(0% at 0 0);
-        -webkit-clip-path: circle(0% at 0 0);
-    }
-    to {
-        clip-path: circle(150% at 0 0);
-        -webkit-clip-path: circle(150% at 0 0);
-    }
-}
-
-@keyframes next {
-    from {
-        clip-path: circle(0% at 100% 0);
-        -webkit-clip-path: circle(0% at 100% 0);
-    }
-    to {
-        clip-path: circle(150% at 100% 0);
-        -webkit-clip-path: circle(150% at 100% 0);
+    p {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding: 2.5% 0 10%;
     }
 }

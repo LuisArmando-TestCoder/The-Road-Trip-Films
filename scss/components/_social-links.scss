@@ -1,0 +1,23 @@
+.menu-wrapper {
+    position: fixed;
+    aside {
+        position: absolute;
+        bottom: 15vh;
+        left: 60vw;
+        @media (min-width: 640px) {
+            left: 40vw;
+        }
+        @media (min-width: 1080px) {
+            left: 20vw;
+        }
+        li {
+            text-align: center;
+        }
+        a { 
+            color: #fff;
+        }
+        i {
+            padding: 10px;
+        }
+    }
+}

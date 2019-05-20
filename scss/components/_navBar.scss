@@ -8,6 +8,15 @@ $laptopBP: 1080px;
 }
 
 .menu {
+  footer {
+    position: absolute;
+    bottom: 0;
+    i {
+      padding: 0 25px 25px;
+      color: #fff;
+      display: block;
+    }
+  }
   padding: 50px 0;
   background: #101010;
   width: 100%;

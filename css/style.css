@@ -191,6 +191,15 @@ h2 {
   position: absolute;
   transition: 1s;
 }
+.menu footer {
+  position: absolute;
+  bottom: 0;
+}
+.menu footer i {
+  padding: 0 25px 25px;
+  color: #fff;
+  display: block;
+}
 
 .menu-input {
   transform: rotate(0deg);
@@ -321,12 +330,12 @@ h2 {
 }
 
 .showreel {
-  position: fixed;
+  position: absolute;
   width: 100px;
   text-align: center;
   left: 0;
   right: 0;
-  top: 25px;
+  top: 30px;
   margin: auto;
   text-decoration: none;
   color: #888;
@@ -403,6 +412,12 @@ h2 {
   height: 100%;
   z-index: 2;
   box-shadow: 0 0 300px -50px #fff;
+}
+@media (max-width: 1080px) {
+  #showreel {
+    height: 50vw;
+    width: 100vw;
+  }
 }
 
 #showreelOut {
@@ -537,6 +552,88 @@ header {
   height: 80%;
   margin-right: auto;
   display: block;
+}
+
+[mostradles] {
+  height: 50vh;
+  margin: auto;
+  width: 100%;
+  max-width: 640px;
+  padding: 50px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: justify;
+}
+[mostradles] h1 {
+  font-size: 5vw;
+  padding: 50px;
+  text-align: center;
+}
+
+[mostradles] p span {
+  line-height: 1.5;
+  will-change: opacity;
+  animation: show 1s forwards;
+  display: inline-block;
+  color: #0000;
+  -webkit-animation: show 2.5s forwards;
+  white-space: pre;
+  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+}
+@keyframes show {
+  from {
+    color: #0000;
+  }
+  to {
+    color: #000;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+}
+
+.logo-animation img {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+i.fab {
+  font-size: 30px;
+}
+
+.menu-wrapper {
+  position: fixed;
+}
+.menu-wrapper aside {
+  position: absolute;
+  bottom: 15vh;
+  left: 60vw;
+}
+@media (min-width: 640px) {
+  .menu-wrapper aside {
+    left: 40vw;
+  }
+}
+@media (min-width: 1080px) {
+  .menu-wrapper aside {
+    left: 20vw;
+  }
+}
+.menu-wrapper aside li {
+  text-align: center;
+}
+.menu-wrapper aside a {
+  color: #fff;
+}
+.menu-wrapper aside i {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

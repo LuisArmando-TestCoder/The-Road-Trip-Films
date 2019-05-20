@@ -8,6 +8,10 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/brands.css"
+        integrity="sha384-i2PyM6FMpVnxjRPi0KW/xIS7hkeSznkllv+Hx/MtYDaHA5VcF0yL3KVlvzp8bWjQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css"
+        integrity="sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J" crossorigin="anonymous">
     <script src="js/lib/quicker.js"></script>
 </head>
 
@@ -20,17 +24,34 @@
             <input class="menu-input" id="menu" type="checkbox">
             <nav class="menu">
                 <ul class="menu__list"></ul>
+                <aside>
+                    <ul class="social-links">
+                    </ul>
+                </aside>
+                <footer>
+                    <i>72078759</i>
+                    <i>pablo@theroadtripfilms.com</i>
+                    <!-- attach to josepablovasquez02@gmail.com -->
+                </footer>
             </nav>
         </div>
     </header>
     <div id="content">
+        <article id="pageInfo">
+            <div class="logo-animation">
+                <img src="https://digitalsynopsis.com/wp-content/uploads/2015/12/creative-logo-animations-21.gif"
+                    alt="the road trip films logo animation">
+            </div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione vitae facilis veritatis,
+                necessitatibus sint officiis officia eum eveniet enim. Veniam provident omnis corrupti asperiores
+                expedita dolore eum facilis dicta nobis!
+            </p>
+        </article>
         <section hide id="showreel">
             <h2>Showreel</h2>
             <div id="showreelOut"></div>
             <video controls src="./videos/Will Sutton Filmmaking Showreel 2018.mp4"></video>
-        </section>
-        <section id="heroBanner">
-            <div class="logoAnimation"></div>
         </section>
     </div>
 
@@ -39,6 +60,8 @@
     <script src="js/navigation/leaveOpenNavMenu.js"></script>
     <script src="js/controlView.js"></script>
     <script src="js/showreel.js"></script>
+    <script src="js/pageInfo.js"></script>
+    <script src="js/renderSocialLinks.js"></script>
 </body>
 
 </html>

@@ -11,14 +11,25 @@ $laptopBP: 1080px;
   footer {
     position: absolute;
     bottom: 0;
-    i {
-      padding: 0 25px 25px;
+    i, b {
       color: #fff;
       display: block;
     }
+    i {
+      padding: 5px $spacing $spacing;
+    }
+    b {
+      padding: 0 $spacing;
+      font-size: 18px;
+      color: #fff8;
+    }
   }
-  padding: 50px 0;
-  background: #101010;
+  a {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  padding: $spacing 0;
+  background: #000;
   width: 100%;
   top: -100vh;
   bottom: 0;
@@ -39,8 +50,8 @@ $laptopBP: 1080px;
   appearance: none;
   width: 30px;
   height: 5px;
-  right: 25px;
-  background: #101010;
+  right: $spacing;
+  background: #0000;
   margin: 35px auto;
   //   float: right;
   &:hover {
@@ -53,7 +64,7 @@ $laptopBP: 1080px;
     display: block;
     width: 30px;
     height: 5px;
-    background: #101010;
+    background: #000;
     position: absolute;
     transform: rotate(0deg);
     &:hover {
@@ -61,26 +72,21 @@ $laptopBP: 1080px;
     }
   }
   &:before {
-    top: -10px;
+    top: -5px;
   }
   &:after {
-    top: 10px;
+    top: 5px;
   }
 }
 
 .menu-input:checked + .menu {
-  left: 75vw;
-  @media (max-width: 1080px) {
-    left: 50vw;
-  }
-  @media (max-width: 640px) {
-    left: 25vw;
-  }
+  left: 25vw;
 }
 
 .menu-input:checked {
   &:before,
   &:after {
+    background: #fff;
     top: -5px;
   }
   &:after {
@@ -116,12 +122,11 @@ $laptopBP: 1080px;
   }
   z-index: 1;
   display: block;
-  background: #fff;
   width: 30px;
   height: 30px;
   position: fixed;
   top: 22.5px;
-  right: 25px;
+  right: $spacing;
   margin: auto;
   border-radius: 50%;
   transition: 0.25s;
@@ -143,14 +148,14 @@ $laptopBP: 1080px;
 
 .item__anchor {
   transition: 0.5s;
-  padding: 25px;
+  padding: 30px $spacing;
   display: block;
   text-decoration: none;
-  color: #666;
-  box-shadow: inset 0px 0 0 #0000;
+  font-weight: bold;
+  font-size: 48px;
+  color: #fff;
   &:hover {
-    box-shadow: inset 10px 0 0 #fff;
-    text-decoration: underline;
-    color: #fff;
+    background: #fff;
+    color: #000;
   }
 }

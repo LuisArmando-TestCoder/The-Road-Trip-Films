@@ -5,7 +5,7 @@
         display: block;
         width: 300px;
         margin: 0 auto;
-        padding: 25px;
+        padding: 0 0 25px;
         text-align: center;
     }
     .social-links {
@@ -17,5 +17,11 @@
         i {
             padding: 25px;
         }
+    }
+    .logo {
+        mix-blend-mode: exclusion;
+        margin: auto;
+        padding: 70px 10px;
+        margin: 0px auto;
     }
 }

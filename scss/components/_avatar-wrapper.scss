@@ -4,15 +4,21 @@
     grid-template-columns: repeat(2, 1fr);
     margin: 50px auto;
 
-    @media (max-width: 640px) {
+    @media (max-width: 1080px) {
         grid-template-columns: 1fr;
     }
 }
 
 .avatar {
+
+    @media (max-width: 1080px) {
+        width: 250px;
+        height: 250px;
+    }
+
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     margin: auto;
     background-image: url('../img/jpg/avatar.jpg');
     background-size: cover;
@@ -44,8 +50,9 @@
 }
 
 .avatar-info {
-    @media (max-width: 640px) {
+    @media (max-width: 1080px) {
         margin: 50px auto;
+        width: 280px;
     }
 
     font-size: 18px;

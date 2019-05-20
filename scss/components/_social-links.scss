@@ -2,14 +2,8 @@
     position: fixed;
     aside {
         position: absolute;
-        bottom: 15vh;
-        left: 60vw;
-        @media (min-width: 640px) {
-            left: 40vw;
-        }
-        @media (min-width: 1080px) {
-            left: 20vw;
-        }
+        bottom: $spacing;
+        left: calc(70vw - 30px * 2);
         li {
             text-align: center;
         }

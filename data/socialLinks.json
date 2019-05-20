@@ -1,5 +1,10 @@
 [
     {
+        "social": "You_Tube",
+        "href": "https://www.youtube.com/channel/UCkU6X5cjsWR4TwVkUTH0AGQ",
+        "fontClass": "fab fa-youtube"
+    },
+    {
         "social": "Instagram",
         "href": "https://www.instagram.com/theroadtripfilms/",
         "fontClass": "fab fa-instagram"
@@ -8,10 +13,5 @@
         "social": "Vimeo",
         "href": "https://vimeo.com/vsqz",
         "fontClass": "fab fa-vimeo-v"
-    },
-    {
-        "social": "You_Tube",
-        "href": "https://www.youtube.com/channel/UCkU6X5cjsWR4TwVkUTH0AGQ",
-        "fontClass": "fab fa-youtube"
     }
 ]

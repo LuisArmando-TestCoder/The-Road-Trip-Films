@@ -1,13 +1,14 @@
 #images {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 100px;
+    grid-template-columns: 2fr 320px;
+    grid-gap: 25px;
     @media (max-width: 1080px) {
         grid-template-columns: 1fr;
         grid-gap: 0px;
     }
     a {
-        width: 100%;
+        width: 95%;
+        margin-left: auto;
         height: 40vw;
         position: relative;
         background-attachment: fixed;
@@ -55,7 +56,10 @@
             padding: 15px 35px 75px;
             box-sizing: border-box;
         }
-        width: 90%;
+        padding-right: 50px;
+        height: 165px;
+        width: 85%;
+        margin: auto;
         line-height: 1.25;
         letter-spacing: 1px;
     }

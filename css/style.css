@@ -555,7 +555,6 @@ header {
 }
 
 [mostradles] {
-  height: 50vh;
   margin: auto;
   width: 100%;
   max-width: 640px;
@@ -634,6 +633,28 @@ i.fab {
 }
 .menu-wrapper aside i {
   padding: 10px;
+}
+
+.page-footer {
+  background: #101010;
+  color: #fff;
+}
+.page-footer b {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+}
+.page-footer .social-links {
+  display: flex;
+  justify-content: center;
+}
+.page-footer .social-links a {
+  color: #fff;
+}
+.page-footer .social-links i {
+  padding: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

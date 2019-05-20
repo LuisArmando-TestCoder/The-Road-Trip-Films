@@ -1,4 +1,30 @@
-#content > section{
-    min-height: 100vh;
-    background: #fff;
+#content {
+    // &::before {
+    //     content: '';
+    //     display: block;
+    //     position: fixed;
+    //     top: 0;
+    //     width: 100vw;
+    //     height: 100vh;
+    //     margin: auto;
+    //     background: #fff;
+    //     z-index: 4;
+    //     -webkit-clip-path: circle(111.6% at 50% 100%);
+    //     clip-path: circle(111.6% at 50% 100%);
+    //     animation: clipDown 3s forwards;
+    //     -webkit-animation: clipDown 2s forwards;
+
+    //     @keyframes clipDown {
+    //         to {
+    //             -webkit-clip-path: circle(0% at 50% 50%);
+    //             clip-path: circle(0% at 50% 50%);
+    //         }
+    //     }
+    // }
+
+    &>section {
+        min-height: 100vh;
+        background: #fff;
+    }
+
 }

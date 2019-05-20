@@ -1,0 +1,56 @@
+.avatar-wrapper {
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px auto;
+
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.avatar {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background-image: url('../img/jpg/avatar.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: fallFromSky 3s forwards;
+    -webkit-animation: fallFromSky 3s forwards;
+    opacity: 0;
+    transform: translateX(-10vw);
+    -webkit-transform: translateX(-10vw);
+    -moz-transform: translateX(-10vw);
+    -ms-transform: translateX(-10vw);
+    -o-transform: translateX(-10vw);
+
+    @keyframes fallFromSky {
+        to {
+            opacity: 1;
+            transform: translateX(0vw);
+            -webkit-transform: translateX(0vw);
+            -moz-transform: translateX(0vw);
+            -ms-transform: translateX(0vw);
+            -o-transform: translateX(0vw);
+        }
+    }
+}
+
+.avatar-info {
+    @media (max-width: 640px) {
+        margin: 50px auto;
+    }
+
+    font-size: 18px;
+    width: 320px;
+    margin: auto;
+    line-height: 1.25;
+    letter-spacing: 1px;
+}

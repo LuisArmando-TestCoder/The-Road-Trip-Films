@@ -1,6 +1,5 @@
 (function () {
-    const paragraphs = [...document.querySelectorAll('article p')];
-
+    const paragraphs = [...document.querySelectorAll('#pageInfo p')];
     function spanify(elem, interval = 10) {
         const str = elem.innerText;
         elem.innerHTML =
@@ -10,7 +9,7 @@
     }
 
     quicker().setClassShowHide({
-        selector: 'article',
+        selector: '#pageInfo',
         showState: 'mostradles'
     });
 

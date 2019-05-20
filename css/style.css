@@ -487,7 +487,7 @@ header {
     grid-gap: 0px;
   }
 }
-#images div {
+#images a {
   width: 100%;
   height: 40vw;
   position: relative;
@@ -499,21 +499,21 @@ header {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
-#images div:hover {
+#images a:hover {
   cursor: pointer;
 }
-#images div:hover::after, #images div:hover::before {
+#images a:hover::after, #images a:hover::before {
   opacity: 1;
 }
-#images div::before {
+#images a::before {
   width: 50px;
   height: 5px;
 }
-#images div::after {
+#images a::after {
   width: 5px;
   height: 50px;
 }
-#images div::after, #images div::before {
+#images a::after, #images a::before {
   content: "";
   opacity: 0;
   display: block;
@@ -567,6 +567,9 @@ header {
   font-size: 5vw;
   padding: 50px;
   text-align: center;
+}
+[mostradles] p {
+  position: relative;
 }
 
 [mostradles] p span {
@@ -723,6 +726,64 @@ a[href="#show-up-links"] {
 #show-up-links a:hover {
   text-decoration-color: #fff;
   -moz-text-decoration-color: #fff;
+}
+
+.avatar-wrapper {
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px auto;
+}
+@media (max-width: 640px) {
+  .avatar-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.avatar {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  background-image: url("../img/jpg/avatar.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: fallFromSky 3s forwards;
+  -webkit-animation: fallFromSky 3s forwards;
+  opacity: 0;
+  transform: translateX(-10vw);
+  -webkit-transform: translateX(-10vw);
+  -moz-transform: translateX(-10vw);
+  -ms-transform: translateX(-10vw);
+  -o-transform: translateX(-10vw);
+}
+@keyframes fallFromSky {
+  to {
+    opacity: 1;
+    transform: translateX(0vw);
+    -webkit-transform: translateX(0vw);
+    -moz-transform: translateX(0vw);
+    -ms-transform: translateX(0vw);
+    -o-transform: translateX(0vw);
+  }
+}
+
+.avatar-info {
+  font-size: 18px;
+  width: 320px;
+  margin: auto;
+  line-height: 1.25;
+  letter-spacing: 1px;
+}
+@media (max-width: 640px) {
+  .avatar-info {
+    margin: 50px auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

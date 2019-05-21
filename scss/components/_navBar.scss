@@ -101,17 +101,6 @@ $laptopBP: 1080px;
   @media (max-width: 1080px) {
       left: 0;
   }
-  // &::before {
-  //   content: '';
-  //   display: block;
-  //   position: fixed;
-  //   width: 100vw;
-  //   height: 100vh;
-  //   background: #000;
-  //   filter: blur(50px);
-  //   -webkit-filter: blur(50px);
-  //   z-index: -1;
-  // }
 }
 
 .menu-input:checked {

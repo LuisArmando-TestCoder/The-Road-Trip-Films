@@ -123,6 +123,13 @@ h2 {
   opacity: 0;
 }
 
+#content {
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
 #content > section {
   min-height: 100vh;
   background: #fff;
@@ -640,7 +647,7 @@ i.fab {
 .menu-wrapper aside {
   position: absolute;
   bottom: 40px;
-  left: calc(70vw - 30px * 2);
+  left: calc(70vw - 30px);
 }
 @media (max-width: 1080px) {
   .menu-wrapper aside {
@@ -819,8 +826,6 @@ a[href="#show-up-links"] {
   font-size: 18px;
   width: 320px;
   margin: auto;
-  line-height: 1.25;
-  letter-spacing: 1px;
 }
 @media (max-width: 1080px) {
   .avatar-info {
@@ -843,6 +848,19 @@ a[href="#show-up-links"] {
 #skills li {
   font-size: 20px;
   margin: 20px 0;
+}
+
+#behindScenesImages {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 150px;
+}
+#behindScenesImages div {
+  padding-bottom: 75%;
+  background-color: #333;
+  background-size: cover;
+  background-position: center;
 }
 
 .back-top {

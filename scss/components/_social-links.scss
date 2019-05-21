@@ -4,6 +4,9 @@
         position: absolute;
         bottom: $spacing;
         left: calc(70vw - 30px * 2);
+        @media (max-width: 1080px) {
+            left: calc(100vw - 30px - 30px * 2);
+        }
         li {
             text-align: center;
         }

@@ -195,12 +195,19 @@ h2 {
   position: absolute;
   bottom: 0;
 }
-.menu footer i, .menu footer b {
+.menu footer i,
+.menu footer b {
   color: #fff;
   display: block;
 }
 .menu footer i {
   padding: 5px 40px 40px;
+}
+@media (max-width: 640px) {
+  .menu footer i {
+    padding: 5px 40px 13px;
+    font-size: 14px;
+  }
 }
 .menu footer b {
   padding: 0 40px;
@@ -230,7 +237,7 @@ h2 {
 .menu-input:hover {
   cursor: pointer;
 }
-.menu-input:before, .menu-input:after {
+.menu-input::before, .menu-input::after {
   transition: 0.25s;
   content: "";
   display: block;
@@ -240,18 +247,23 @@ h2 {
   position: absolute;
   transform: rotate(0deg);
 }
-.menu-input:before:hover, .menu-input:after:hover {
+.menu-input::before:hover, .menu-input::after:hover {
   cursor: pointer;
 }
-.menu-input:before {
+.menu-input::before {
   top: -5px;
 }
-.menu-input:after {
+.menu-input::after {
   top: 5px;
 }
 
 .menu-input:checked + .menu {
   left: 25vw;
+}
+@media (max-width: 1080px) {
+  .menu-input:checked + .menu {
+    left: 0;
+  }
 }
 
 .menu-input:checked {
@@ -263,18 +275,18 @@ h2 {
   -ms-transform: rotate(360deg);
   -o-transform: rotate(360deg);
 }
-.menu-input:checked:before, .menu-input:checked:after {
+.menu-input:checked::before, .menu-input:checked::after {
   background: #fff;
   top: -5px;
 }
-.menu-input:checked:after {
+.menu-input:checked::after {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
 }
-.menu-input:checked:before {
+.menu-input:checked::before {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -429,11 +441,11 @@ h2 {
   height: 100%;
   z-index: 1;
   background: #0008;
-  transform: scale(200);
-  -webkit-transform: scale(200);
-  -moz-transform: scale(200);
-  -ms-transform: scale(200);
-  -o-transform: scale(200);
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
 }
 
 #showreel[hide] {
@@ -461,9 +473,16 @@ h2 {
 }
 #videos p {
   width: 80%;
-  margin: auto;
-  text-align: center;
+  max-width: 300px;
+  line-height: 1.25;
+  margin-left: 14%;
   padding: 2.5% 0 10%;
+  font-size: 18px;
+}
+@media (max-width: 1080px) {
+  #videos p {
+    margin-left: 5%;
+  }
 }
 
 header {
@@ -623,6 +642,11 @@ i.fab {
   bottom: 40px;
   left: calc(70vw - 30px * 2);
 }
+@media (max-width: 1080px) {
+  .menu-wrapper aside {
+    left: calc(100vw - 30px - 30px * 2);
+  }
+}
 .menu-wrapper aside li {
   text-align: center;
 }
@@ -692,11 +716,13 @@ a[href="#show-up-links"] {
 }
 
 #show-up-links {
-  padding: 50px 0;
+  padding: 25vh 0;
   display: flex;
   justify-content: space-around;
 }
 #show-up-links a {
+  width: 100%;
+  max-width: 260px;
   text-transform: uppercase;
   background: #fff;
   font-size: 22px;
@@ -716,6 +742,12 @@ a[href="#show-up-links"] {
   -ms-transition: 0.25s;
   -o-transition: 0.25s;
   box-shadow: 0px 7px 20px -6px #0008;
+}
+@media (max-width: 1080px) {
+  #show-up-links a {
+    min-width: 50px;
+    width: unset;
+  }
 }
 @media (max-width: 640px) {
   #show-up-links a {
@@ -768,8 +800,8 @@ a[href="#show-up-links"] {
 }
 @media (max-width: 1080px) {
   .avatar {
-    width: 250px;
-    height: 250px;
+    width: 190px;
+    height: 190px;
   }
 }
 @keyframes fallFromSky {
@@ -793,7 +825,7 @@ a[href="#show-up-links"] {
 @media (max-width: 1080px) {
   .avatar-info {
     margin: 50px auto;
-    width: 280px;
+    width: 220px;
   }
 }
 

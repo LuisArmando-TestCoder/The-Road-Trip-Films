@@ -12,8 +12,13 @@
 
     p {
         width: 80%;
-        margin: auto;
-        text-align: center;
+        max-width: 300px;
+        line-height: 1.25;
+        margin-left: 14%;
         padding: 2.5% 0 10%;
+        font-size: 18px;
+        @media (max-width: 1080px) {
+            margin-left: 5%;
+        }
     }
 }

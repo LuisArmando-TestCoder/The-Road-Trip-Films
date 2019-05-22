@@ -3,7 +3,7 @@
     aside {
         position: absolute;
         bottom: $spacing;
-        left: calc(70vw - 30px);
+        left: calc(35vw - 30px + 15px);
         @media (max-width: 1080px) {
             left: calc(100vw - 30px - 30px * 2);
         }

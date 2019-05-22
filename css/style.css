@@ -185,6 +185,7 @@ h2 {
   bottom: 0;
   width: 100%;
   font-size: 1.2em;
+  z-index: 2;
 }
 
 .menu {
@@ -250,7 +251,7 @@ h2 {
   display: block;
   width: 30px;
   height: 5px;
-  background: #000;
+  background: #101010;
   position: absolute;
   transform: rotate(0deg);
 }
@@ -265,7 +266,7 @@ h2 {
 }
 
 .menu-input:checked + .menu {
-  left: 25vw;
+  left: 60vw;
 }
 @media (max-width: 1080px) {
   .menu-input:checked + .menu {
@@ -283,7 +284,7 @@ h2 {
   -o-transform: rotate(360deg);
 }
 .menu-input:checked::before, .menu-input:checked::after {
-  background: #fff;
+  background: #f0f0f0;
   top: -5px;
 }
 .menu-input:checked::after {
@@ -306,7 +307,6 @@ h2 {
 }
 
 .menu-label {
-  z-index: 1;
   display: block;
   width: 30px;
   height: 30px;
@@ -647,7 +647,7 @@ i.fab {
 .menu-wrapper aside {
   position: absolute;
   bottom: 40px;
-  left: calc(70vw - 30px);
+  left: calc(35vw - 30px + 15px);
 }
 @media (max-width: 1080px) {
   .menu-wrapper aside {

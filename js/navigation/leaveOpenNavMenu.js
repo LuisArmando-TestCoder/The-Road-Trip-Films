@@ -15,11 +15,17 @@
         }
     }
 
+    function hideShowNav() {
+        if(menuBtn.checked)  menuBtn.checked = false;
+        blurContent();
+    }
+
     function changeCheckedNav(e) {
         menuBtn.checked = JSON.parse(localStorage.getItem('navOpen'));
         blurContent();
     }
     
-    changeCheckedNav();
+    // changeCheckedNav();
     menuBtn.addEventListener('change', checkNavLocalStorage);
+    content.addEventListener('click', hideShowNav);
 }());

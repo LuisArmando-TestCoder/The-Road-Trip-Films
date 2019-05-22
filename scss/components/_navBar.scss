@@ -5,6 +5,7 @@ $laptopBP: 1080px;
   bottom: 0;
   width: 100%;
   font-size: 1.2em;
+  z-index: 2;
 }
 
 .menu {
@@ -77,7 +78,7 @@ $laptopBP: 1080px;
     display: block;
     width: 30px;
     height: 5px;
-    background: #000;
+    background: #101010;
     position: absolute;
     transform: rotate(0deg);
 
@@ -96,7 +97,7 @@ $laptopBP: 1080px;
 }
 
 .menu-input:checked + .menu {
-  left: 25vw;
+  left: 60vw;
 
   @media (max-width: 1080px) {
       left: 0;
@@ -104,10 +105,9 @@ $laptopBP: 1080px;
 }
 
 .menu-input:checked {
-
   &::before,
   &::after {
-    background: #fff;
+    background: #f0f0f0;
     top: -5px;
   }
 
@@ -145,7 +145,6 @@ $laptopBP: 1080px;
     cursor: pointer;
   }
 
-  z-index: 1;
   display: block;
   width: 30px;
   height: 30px;

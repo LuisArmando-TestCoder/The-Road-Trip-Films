@@ -11,7 +11,7 @@
         if(menuBtn.checked) {
             content.style.filter = 'blur(10px)';
         } else {
-            content.style.filter = 'blur(0px)';
+            content.style.filter = '';
         }
     }
 

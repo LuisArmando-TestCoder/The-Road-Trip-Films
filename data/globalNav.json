@@ -4,15 +4,15 @@
         "href": "./"
     },
     {
-        "title": "Photos",
-        "href": "photography.html"
-    },
-    {
-        "title": "Videos",
-        "href": "videos.html"
+        "title": "Work",
+        "href": "#vimeoVideos"
     },
     {
         "title": "About",
-        "href": "about.html"
+        "href": "#about"
+    },
+    {
+        "title": "Contact",
+        "href": "#contact"
     }
 ]

@@ -3,9 +3,22 @@
         min-height: 100vh;
         background: #fff;
     }
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
+
+    filter: blur(233px) brightness(0%);
+    -webkit-filter: blur(233px) brightness(0%);
+
+    animation: unblur 2s forwards;
+    -webkit-animation: unblur 2s forwards;
+
+    @keyframes unblur {
+        from {
+            filter: blur(233px) brightness(0%);
+            -webkit-filter: blur(233px) brightness(0%);
+        }
+
+        to {
+            filter: blur(0) brightness(100%);
+            -webkit-filter: blur(0) brightness(100%);
+        }
+    }
 }

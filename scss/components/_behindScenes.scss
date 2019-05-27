@@ -1,7 +1,7 @@
 #behindScenesImages {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     padding-bottom: 150px;
     div {
         padding-bottom: 75%;

@@ -1,8 +1,9 @@
 .menu-wrap {
-  & > div {
+  &>div {
     display: flex;
     align-items: center;
   }
+
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -25,8 +26,20 @@
   text-decoration: none;
   color: #fff;
   padding: 15px;
-  transition: 0.5s;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
   font-family: 'Roboto', cursive;
   font-weight: bold;
   font-size: 16px;
+
+  &:hover {
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+  }
 }

@@ -3,6 +3,7 @@
 }
 #videos {
     iframe {
+        background: #000;
         width: 100%;
         height: 40vw;
         @media (max-width: 1080px) {

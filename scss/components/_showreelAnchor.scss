@@ -1,11 +1,5 @@
 .showreel {
-    position: absolute;
-    width: 100px;
     text-align: center;
-    left: 0;
-    right: 0;
-    top: 30px;
-    margin: auto;
     text-decoration: none;
     color: #888;
     font-size: 16px;
@@ -20,8 +14,8 @@
         }
     }
     &::before {
-        color: #000;
-        content: '►';
+        font-family: 'Font Awesome 5 Free';
+        content: '\f04b';
         margin-right: 5px;
         transition: 0.5s;
         -webkit-transition: 0.5s;

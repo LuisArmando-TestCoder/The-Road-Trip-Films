@@ -1,11 +1,14 @@
-(function() {
+(function () {
     const items = document.querySelectorAll('[parallax]');
 
     function parallaxItems() {
-        [... items].forEach((item) => {
-            item.style.top = `-${window.scrollY / parseInt(item.getAttribute('parallax') * 2)}px`;
+        [...items].forEach((item) => {
+            const pos = item.getBoundingClientRect().toJSON();
+            if (pos.bottom > 0) {
+                item.style.top = `${pos.bottom / item.getAttribute('parallax')}px`;
+            }
         });
     }
-
+    parallaxItems();
     window.addEventListener('scroll', parallaxItems);
 }());

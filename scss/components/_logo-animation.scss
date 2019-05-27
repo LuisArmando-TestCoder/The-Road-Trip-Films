@@ -1,5 +1,10 @@
 .logo-animation img {
-    margin: auto;
+    margin: 50px auto 0;
     display: block;
     width: 90%;
+    max-width: 420px;
+    mix-blend-mode: exclusion;
+    @media (max-width: 640px) {
+        margin-top: 170px;
+    }
 }

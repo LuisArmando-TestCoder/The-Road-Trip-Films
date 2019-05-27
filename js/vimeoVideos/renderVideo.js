@@ -10,9 +10,6 @@
             videos.appendChild(iframe);
             videos.appendChild(p);
         });
-        videoTitle.innerText = obj.title;
-        videoDescription.innerText = obj.description;
-        videoIframe.src = obj.src;
     }
 
     quicker().fetchJSON('data/vimeoVideos.json', renderVideo);

@@ -14,47 +14,52 @@
 </head>
 
 <body>
-    <header>
-        <a href="./" class="logo"></a>
-        <button class="showreel">Showreel</button>
-        <div class="menu-wrapper">
-            <label class="menu-label" for="menu"></label>
-            <input class="menu-input" id="menu" type="checkbox">
-            <nav class="menu">
-                <ul class="menu__list"></ul>
-                <aside>
-                    <ul class="social-links">
-                    </ul>
-                </aside>
-                <footer>
-                    <b>Number</b>
-                    <i>+ (506) 7207 - 8759</i>
-                    <b>Email</b>
-                    <i>pablo@theroadtripfilms.com</i>
-                    <!-- attach to josepablovasquez02@gmail.com -->
-                </footer>
-            </nav>
-        </div>
-    </header>
+    <label class="menu" for="ham">
+        <nav class="menu-wrap">
+            <div>
+                <div class="logo"></div>
+                <a class="showreel">Showreel</a>
+            </div>
+            <ul class="menu__list">
+            </ul>
+        </nav>
+    </label>
     <div id="content">
         <article id="pageInfo">
             <div class="logo-animation">
-                <img src="https://digitalsynopsis.com/wp-content/uploads/2015/12/creative-logo-animations-21.gif"
+                <img src="./img/logo_animation.gif"
                     alt="the road trip films logo animation">
             </div>
-            <p parallax="1">
+            <p parallax="10">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione vitae facilis veritatis,
                 necessitatibus sint officiis officia eum eveniet enim. Veniam provident omnis corrupti asperiores
                 expedita dolore eum facilis dicta nobis!
             </p>
-            <a href="#show-up-links">
+            <a class="show-up-links" href="#vimeoVideos">
                 <i class="fas fa-chevron-down"></i>
             </a>
         </article>
-        <div id="show-up-links">
+        <section id="vimeoVideos">
+            <h2>Audio visual works</h2>
+            <div id="videos">
+            </div>
+        </section>
+        <!-- <div id="show-up-links">
             <a href="./photography.html">Photos</a>
             <a href="./videos.html">Videos</a>
+        </div> -->
+        <div class="avatar-wrapper">
+            <div class="avatar" parallax="10"></div>
+            <p class="avatar-info">
+                Jose Pablo Vasquez Jimenez is an audiovisual
+                producer and Costa Rican photographer specializing
+                in extreme sports and adventures.
+            </p>
         </div>
+        <section id="behindScenes">
+            <h2>Behind scenes</h2>
+            <ul id="behindScenesImages"></ul>
+        </section>
         <section hide id="showreel">
             <h2>Showreel</h2>
             <div id="showreelOut"></div>
@@ -71,12 +76,13 @@
 
 
     <script src="js/navigation/navRender.js"></script>
-    <script src="js/navigation/leaveOpenNavMenu.js"></script>
     <script src="js/controlView.js"></script>
     <script src="js/showreel.js"></script>
     <script src="js/pageInfo.js"></script>
     <script src="js/renderSocialLinks.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="js/photoGallery/renderBehindScenes.js"></script>
+    <script src="js/vimeoVideos/renderVideo.js"></script>
 </body>
 
 </html>

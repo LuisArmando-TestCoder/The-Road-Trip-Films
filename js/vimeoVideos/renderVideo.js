@@ -3,12 +3,17 @@
     function renderVideo(array) {
         array.forEach((obj) => {
             const iframe = document.createElement('iframe');
-            const p = document.createElement('p');
+            const div = document.createElement('div');
+            const h3 = document.createElement('h3');
+            const i = document.createElement('i');
             iframe.src = obj.src;
             iframe.setAttribute('allowfullscreen', '');
-            p.innerText = obj.description;
+            h3.innerText = obj.description;
+            i.innerText = obj.date;
             videos.appendChild(iframe);
-            videos.appendChild(p);
+            videos.appendChild(div);
+            div.appendChild(h3);
+            div.appendChild(i);
         });
     }
 

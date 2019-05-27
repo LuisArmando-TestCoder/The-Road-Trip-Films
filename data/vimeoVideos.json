@@ -1,10 +1,12 @@
 [
     {
-        "description": "Edición de video para The Waterfall Trail",
+        "description": "Catarata Ayil | The Waterfall trail",
+        "date": "11/2/1998",
         "src": "https://player.vimeo.com/video/246056408"
     },
     {
-        "description": "Producción Audiovisual para Tuanis Chocolate en colaboración con The Waterfall Trail",
+        "description": "Tuanis Chocolate",
+        "date": "11/2/1998",
         "src": "https://player.vimeo.com/video/236695611"
     }
 ]

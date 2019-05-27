@@ -3,9 +3,9 @@
     function spanify(elem, interval = 10) {
         const str = elem.innerText;
         elem.innerHTML =
-            str.split('').map((l, i) =>
+            str.split(' ').map((l, i) =>
                 `<span style="animation-delay:${i / interval}s">${l}</span>`)
-            .join('');
+            .join(' ');
     }
 
     quicker().setClassShowHide({
@@ -14,7 +14,7 @@
     });
 
     paragraphs.forEach((p, i) => {
-        spanify(p, 100);
+        spanify(p, 10);
         p.parentElement.id = `n${i}`;
     });
 }());

@@ -1,7 +1,7 @@
 (function () {
     const items = document.querySelectorAll('[parallax]');
 
-    function parallaxItems() {
+    function parallaxItems(e) {
         [...items].forEach((item) => {
             const pos = item.getBoundingClientRect().toJSON();
             if (pos.bottom > 0) {

@@ -11,15 +11,21 @@
         }
     }
 
-    p {
+    div {
+        h3 {
+            padding: 5px 0;
+            color: #000d;
+            font-weight: bold;
+        }
+        i {
+            color: #0008;
+            font-size: 14px;
+        }
         width: 80%;
-        max-width: 300px;
-        line-height: 1.25;
-        margin-left: 14%;
-        padding: 2.5% 0 10%;
+        padding: 0% 14vw 10%;
         font-size: 18px;
         @media (max-width: 1080px) {
-            margin-left: 5%;
+            padding: 0% 1% 10%;
         }
     }
 }

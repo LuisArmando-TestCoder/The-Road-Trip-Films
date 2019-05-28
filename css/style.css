@@ -644,7 +644,7 @@ i.fab {
   max-width: 980px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 50px auto;
+  margin: auto;
 }
 @media (max-width: 1080px) {
   .avatar-wrapper > div {

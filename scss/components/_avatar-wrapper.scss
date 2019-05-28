@@ -47,6 +47,16 @@
         }
     }
 }
+.avatar-title {
+    width: 320px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    @media (max-width: 1080px) {
+        margin: 50px auto;
+        width: 220px;
+    }
+    margin: 100px auto 30px;
+}
 
 .avatar-info {
     @media (max-width: 1080px) {
@@ -54,7 +64,10 @@
         width: 220px;
     }
 
-    font-size: 18px;
+    font-size: 16px;
     width: 320px;
     margin: auto;
+    letter-spacing: 1.91px;
+    line-height: 1.5;
+    color: #979797;
 }

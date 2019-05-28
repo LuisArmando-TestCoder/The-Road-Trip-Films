@@ -719,11 +719,15 @@ i.fab {
   margin: 20px 0;
 }
 
+#behindScenes {
+  min-height: unset !important;
+}
+
 #behindScenesImages {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  padding-bottom: 150px;
+  padding-bottom: 5px;
 }
 #behindScenesImages div {
   padding-bottom: 75%;

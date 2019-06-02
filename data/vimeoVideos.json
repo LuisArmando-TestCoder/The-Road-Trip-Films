@@ -2,11 +2,11 @@
     {
         "description": "Catarata Ayil | The Waterfall trail",
         "date": "2 november 1998",
-        "src": "https://player.vimeo.com/video/246056408"
+        "src": "./videos/Catarata Ayil SIN BARRAS.mp4"
     },
     {
         "description": "Tuanis Chocolate",
         "date": "12 june 1996",
-        "src": "https://player.vimeo.com/video/236695611"
+        "src": "./videos/Tuanis Chocolate SIN BARRAS.mp4"
     }
 ]

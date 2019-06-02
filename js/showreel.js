@@ -7,7 +7,6 @@
         return {
             in() {
                 showreel.removeAttribute('hide');
-                v.play();
             },
             out() {
                 showreel.setAttribute('hide', '');

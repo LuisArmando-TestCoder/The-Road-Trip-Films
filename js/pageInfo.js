@@ -14,7 +14,7 @@
     });
 
     paragraphs.forEach((p, i) => {
-        spanify(p, 10);
+        spanify(p, 5);
         p.parentElement.id = `n${i}`;
     });
 }());

@@ -1,12 +1,18 @@
 [
     {
-        "description": "Catarata Ayil | The Waterfall trail",
-        "date": "2 november 1998",
-        "src": "./videos/Catarata Ayil SIN BARRAS.mp4"
+        "destiny": "#showreel",
+        "src": "https://alizamora.github.io/CDN/THE-ROAD-TRIP-FILMS/videos/Will Sutton Filmmaking Showreel 2018.mp4"
     },
     {
+        "destiny": "#videos",
+        "description": "Catarata Ayil | The Waterfall trail",
+        "date": "2 november 1998",
+        "src": "https://alizamora.github.io/CDN/THE-ROAD-TRIP-FILMS/videos/Catarata Ayil SIN BARRAS.mp4"
+    },
+    {
+        "destiny": "#videos",
         "description": "Tuanis Chocolate",
         "date": "12 june 1996",
-        "src": "./videos/Tuanis Chocolate SIN BARRAS.mp4"
+        "src": "https://alizamora.github.io/CDN/THE-ROAD-TRIP-FILMS/videos/Tuanis Chocolate SIN BARRAS.mp4"
     }
 ]

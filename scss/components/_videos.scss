@@ -35,6 +35,13 @@
         height: 80%;
         width: 100vw;
     }
+
+    &:hover {
+        .timeline,
+        .equalizer {
+            opacity: 1;
+        }
+    }
 }
 
 .cursor {
@@ -83,6 +90,12 @@
 .equalizer {
     position: absolute;
     z-index: 2;
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .timeline {
@@ -97,6 +110,7 @@
     @media (min-width: 1080px) {
         width: 75%;
     }
+
 }
 
 .current {
@@ -106,4 +120,3 @@
     width: 0;
     display: block;
 }
-

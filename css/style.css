@@ -425,6 +425,10 @@ h2 {
   height: 80%;
   width: 100vw;
 }
+.video:hover .timeline,
+.video:hover .equalizer {
+  opacity: 1;
+}
 
 .cursor {
   opacity: 0.35;
@@ -472,6 +476,12 @@ h2 {
 .equalizer {
   position: absolute;
   z-index: 2;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .timeline {

@@ -2,9 +2,8 @@ function eqVideo(vid, cnv) {
     const c = cnv;
     let video = vid;
     const ctx = c.getContext('2d');
-    let linesReductor = 200;
+    let linesReduction = 200;
     let audio;
-    let sky;
     let analyzer;
     let range = {};
 
@@ -16,13 +15,13 @@ function eqVideo(vid, cnv) {
     }
 
     function updateLines(e) {
-        linesReductor = e ? e.target.value : linesReductor;
-        range.value = linesReductor;
+        linesReduction = e ? e.target.value : linesReduction;
+        range.value = linesReduction;
     }
 
     function presetColor(n) {
         ctx.beginPath();
-        ctx.fillStyle = `rgb(255,255,255)`;
+        ctx.fillStyle = n;
     }
 
     function sizeCanvas(w, h) {
@@ -31,21 +30,26 @@ function eqVideo(vid, cnv) {
     }
 
     function createLines(array, color) {
+        presetColor(color);
         return {
             y(config, flip) {
+                config.sum = config.sum ? config.sum : 0;
                 array.forEach((num, i) => { // think about i for the gap
-                    presetColor(num);
                     const size = num * config.scale;
                     const distribution = flip ? i * (c.height / array.length) : -(i * (c.height / array.length)) + c.height;
-                    ctx.fillRect(c.width / 2 - size / 2, distribution, size, config.thickness);
+                    const x = c.width / 2 - size / 2;
+                    const y = distribution - config.thickness + config.sum;
+                    ctx.fillRect(x, y, audio.volume ? size : config.stretch, config.thickness);
                 });
             },
             x(config, flip) {
+                config.sum = config.sum ? config.sum : 0;
                 array.forEach((num, i) => {
-                    presetColor(num);
                     const size = num * config.scale;
                     const distribution = flip ? i * (c.width / array.length) : -(i * (c.width / array.length)) + c.width;
-                    ctx.fillRect(distribution, c.height / 2 - size / 2, config.thickness, size);
+                    const x = distribution - config.thickness + config.sum;
+                    const y = c.height / 2 - size / 2;
+                    ctx.fillRect(x, y, config.thickness, audio.volume ? size : config.stretch);
                 });
             }
         }
@@ -58,13 +62,12 @@ function eqVideo(vid, cnv) {
     function frame() {
         clear();
         const f = Array.from(analyzer.getFrequency().array);
-        const a = Array.from(analyzer.getAmplitude().array);
-        const freqs = f.splice(0, f.length / linesReductor);
-        const amps = a.splice(0, a.length / linesReductor);
-        const averAmp = analyzer.getAmplitude().average;
+        const freqs = f.splice(0, f.length / linesReduction);
         createLines(freqs, '#fff').x({
             scale: audio.volume / 10,
-            thickness: 1
+            thickness: audio.volume ? 1 : 20,
+            sum: audio.volume ? -4.5 : 0,
+            stretch: 1
         });
         // audio.volume / 10 = 0.1 -> good scale in 50x50 canvas
         // with high freqs (0.2 is better with lower freqs) 
@@ -72,9 +75,15 @@ function eqVideo(vid, cnv) {
         requestAnimationFrame(frame);
     }
 
+    function toggleVolume() {
+        audio.volume = audio.volume ? 0 : 1;
+    }
+
     audio = video;
 
     sizeCanvas(50, 50);
     updateLines();
+
+    cnv.addEventListener('click', toggleVolume)
     video.addEventListener('click', btnPressed);
 }

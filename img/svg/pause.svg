@@ -1,8 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink" width="32pt" height="32pt" viewBox="0 0 32 32" version="1.1">
-    <g id="surface1">
-        <path style=" stroke:none;fill-rule:nonzero;fill:rgba(255%,255%,255%,0.35);fill-opacity:1;" d="M 16 0.5 C 7.4375 0.5 0.5 7.4375 0.5 16 C 0.5 24.5625 7.4375 31.5 16 31.5 C 24.5625 31.5 31.5 24.5625 31.5 16 C 31.5 7.4375 24.5625 0.5 16 0.5 Z M 15 21 C 15 21.550781 14.550781 22 14 22 L 11 22 C 10.449219 22 10 21.550781 10 21 L 10 11 C 10 10.449219 10.449219 10 11 10 L 14 10 C 14.550781 10 15 10.449219 15 11 Z M 22 21 C 22 21.550781 21.550781 22 21 22 L 18 22 C 17.449219 22 17 21.550781 17 21 L 17 11 C 17 10.449219 17.449219 10 18 10 L 21 10 C 21.550781 10 22 10.449219 22 11 Z M 22 21 "/>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" overflow="visible" enable-background="new 0 0 33 33"
+	 xml:space="preserve">
+<defs>
+</defs>
+<path fill="#fff8" stroke="#fff0" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M16.724,1.063
+	C12.122,1.063,4.645,1,1,1c0,2.882,0.009,11.7,0.009,15.779c0,8.681,7.034,15.715,15.715,15.715s15.715-7.034,15.715-15.715
+	C32.439,8.098,25.406,1.063,16.724,1.063z M16.271,23.238c0,0.729-0.595,1.323-1.323,1.323h-3.97c-0.728,0-1.323-0.595-1.323-1.323
+	V10.005c0-0.728,0.596-1.322,1.323-1.322h3.97c0.728,0,1.323,0.595,1.323,1.322V23.238z M23.535,23.238
+	c0,0.729-0.596,1.323-1.324,1.323h-3.97c-0.728,0-1.323-0.595-1.323-1.323V10.005c0-0.728,0.595-1.322,1.323-1.322h3.97
+	c0.728,0,1.324,0.595,1.324,1.322V23.238z"/>
 </svg>

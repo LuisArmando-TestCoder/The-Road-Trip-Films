@@ -30,9 +30,9 @@ const Layout = ({ children, title }) => {
       <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Designed by
+          {/* © {new Date().getFullYear()}, Designed by
           {` `}
-          <a href="https://github.com/Alizamora">Alizamora</a>
+          <a href="https://github.com/Alizamora">Alizamora</a> */}
           © {new Date().getFullYear()}, Coded by
           {` `}
           <a href="https://github.com/LuisArmando-TestCoder">LuisArmando-TestCoder</a>

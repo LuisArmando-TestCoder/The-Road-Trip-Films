@@ -30,12 +30,12 @@ const Layout = ({ children, title }) => {
       <div>
         <main>{children}</main>
         <footer>
-          <a href="https://github.com/LuisArmando-TestCoder">LuisArmando-TestCoder</a>
-          © {new Date().getFullYear()}, Design by
+          © {new Date().getFullYear()}, Designed by
           {` `}
           <a href="https://github.com/Alizamora">Alizamora</a>
           © {new Date().getFullYear()}, Coded by
           {` `}
+          <a href="https://github.com/LuisArmando-TestCoder">LuisArmando-TestCoder</a>
         </footer>
       </div>
     </>
